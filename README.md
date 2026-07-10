@@ -5,6 +5,13 @@ This project demonstrates a **fully autonomous line-following robot** using **Co
 The robot detects and follows a black path on a white surface using real-time image processing and intelligent control.
 
 ---
+![C](https://img.shields.io/badge/C-Embedded%20Programming-red)
+![Webots](https://img.shields.io/badge/Webots-Robotics%20Simulation-orange)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-Basics-green)
+![PID Control](https://img.shields.io/badge/Control-PID-blue)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
+---
 
 ## ✨ Key Features
 
