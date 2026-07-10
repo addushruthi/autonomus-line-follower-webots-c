@@ -1,138 +1,93 @@
-🤖 Autonomous Line Following Robot using Webots (C Programming)
+# 🤖 Autonomous Line Following Robot using Computer Vision
 
-  <img src="media/demo.gif" width="600"/>
-  🚀 Robotics • C Programming • PID Control • Webots Simulation
+This project demonstrates a **fully autonomous line-following robot** using **Computer Vision (OpenCV)** instead of traditional IR sensors.
 
-📌 Overview
-
-This project demonstrates the design and simulation of an Autonomous Line Following Robot using the Webots robotics simulator, implemented entirely in C programming.
-
-The robot intelligently follows a predefined path using distance sensors and applies a control-based approach to maintain stability and accuracy. By continuously processing sensor feedback and dynamically adjusting motor velocities, the system achieves smooth and reliable navigation.
-
-Unlike basic line-following bots, this project integrates control system principles, making it more robust, efficient, and closer to real-world autonomous systems.
+The robot detects and follows a black path on a white surface using real-time image processing and intelligent control.
 
 ---
 
-✨ Key Features
+## ✨ Key Features
 
-- 🚗 Real-time line following using distance sensors
-- 🎯 Proportional (P) control for smooth navigation
-- ⚡ Low-level motor control using C
-- 🔁 Continuous feedback-based correction system
-- 🌐 Fully simulated in Webots environment
-
----
-
-🧠 System Architecture
-
-- Sensors → Detect line position
-- Controller (C Code) → Compute error & correction
-- Motors → Adjust velocity dynamically
-- Environment (Webots) → Simulated track
+- 🎯 Real-time line detection  
+- 🤖 Autonomous navigation  
+- ⚡ Smooth movement using PID control  
+- 📷 Camera-based tracking (no IR sensors)  
+- 🔁 Handles curves effectively  
 
 ---
 
-⚙️ How It Works
+## 🧠 Technologies Used
 
-1. The robot reads values from left and right sensors
-2. Calculates deviation (error) from the line
-3. Applies control logic:
-   error = left_sensor - right_sensor;
-correction = Kp * error;
-4. Adjusts motor speeds accordingly
-5. Continuously repeats for stable path tracking
+- Python  
+- OpenCV  
+- Webots Simulator  
+- C Programming (e-puck robot)  
+- PID Control  
 
 ---
 
-🛠️ Tech Stack
+## 🎬 Demo
 
-- Language: C
-- Simulator: Webots
-- Concepts: Control Systems, Robotics, Embedded Logic
+<img src="demo.gif" width="600"/>
 
 ---
 
-📁 Project Structure
+## 🏗️ Project Architecture
 
-autonomous-line-follower-webots-c/
-│
-├── controllers/
-│   └── line_follower/
-│       ├── line_follower.c
-│       ├── pid_controller.c
-│       ├── pid_controller.h
-│
-├── worlds/
-│   └── line_world.wbt
-│
-├── media/
-│   ├── demo.gif
-│   └── screenshots/
-│
-├── Makefile
-└── README.md
+Camera → Image Processing → Line Detection → Error Calculation → PID Controller → Motor Control  
 
 ---
 
-▶️ How to Run
+## ▶️ How to Run
 
-1. Open Webots
-2. Load the world file:
-   worlds/line_world.wbt
-3. Run the simulation ▶️
-
----
-
-📷 Demo
-
-img src="media/demo.gif" width="600"
+1. Open Webots Simulator  
+2. Load the project world  
+3. Run the simulation  
+4. Observe the robot following the line  
 
 ---
 
-🎯 Key Highlights
+## 📁 Project Structure
 
-- Built using pure C (low-level control)
-- Demonstrates real-time robotics logic
-- Implements control system fundamentals
-- Clean modular project structure
-
----
-
-🚀 Future Improvements
-
-- 🔄 Full PID Control (Kp + Ki + Kd)
-- 👁️ Camera-based obstacle detection (OpenCV)
-- 🧭 Autonomous path planning
-- 🤖 SLAM & AI integration
+├── README.md
+├── e-puck_line_demo.c
+├── demo.gif
+├── autonov_follower.jpg
 
 ---
 
-💼 Resume Value
+## 📊 Results
 
-This project showcases:
-
-- ✅ Embedded Systems Programming
-- ✅ Robotics Simulation
-- ✅ Control Systems (PID)
-- ✅ Real-time Decision Making
+- ✅ Robot successfully follows the black line  
+- ✅ Smooth navigation using PID  
+- ✅ Works on curved paths  
 
 ---
 
-🏆 Why This Project Stands Out
+## 🧠 Skills Gained
 
-Unlike basic projects, this implementation focuses on control accuracy and system design, making it highly relevant for roles in:
-
-- Robotics
-- Embedded Systems
-- Autonomous Vehicles
-- Control Engineering
+- Computer Vision (OpenCV)  
+- Control Systems (PID)  
+- Robotics Simulation (Webots)  
+- Embedded Programming (C)  
 
 ---
 
-👨‍💻 Author
+## 🚀 Future Improvements
 
-Shruthi Addu
+- Real hardware implementation  
+- Obstacle avoidance  
+- Multi-line detection  
+- AI-based navigation  
 
 ---
 
-⭐ Star this repo if you like it......!
+## 👤 Author
+
+**Shruthi Addu**
+
+---
+
+⭐ If you like this project, give it a star!
+
+
