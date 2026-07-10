@@ -1,10 +1,7 @@
 🤖 Autonomous Line Following Robot using Webots (C Programming)
 
-<p align="center">
   <img src="media/demo.gif" width="600"/>
-</p><p align="center">
   🚀 Robotics • C Programming • PID Control • Webots Simulation
-</p>---
 
 📌 Overview
 
@@ -88,9 +85,7 @@ autonomous-line-follower-webots-c/
 
 📷 Demo
 
-<p align="center">
   <img src="media/demo.gif" width="600"/>
-</p>
 
 ---
 
@@ -137,3 +132,7 @@ Unlike basic projects, this implementation focuses on control accuracy and syste
 👨‍💻 Author
 
 Shruthi Addu
+
+---
+
+⭐ Star this repo if you like it......!
